@@ -1,0 +1,251 @@
+/*Universal Styling.*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+:root {
+    --green: #1f8b55;
+    --yellow: #f4e858;
+}
+
+* {
+	font-size: 16px;
+	font-family: Montserrat;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+body {
+	margin: 0;
+}
+
+colored-dot { /*Found in the h1 of the first section.*/
+	color: var(--yellow);
+	font-size: 100%;
+}
+
+/*css codes for desktop navbar (give the nav element display: block; in media query (min-width: 1200px))*/
+
+nav{
+    display: flex;
+    background-color:  #F0F0F0;
+    height: 140px;
+    position: relative;
+    display: none;
+}
+nav img{
+    position: absolute;
+    width: 268px;
+    height: 100px;
+    left: 122px;
+    top: 20px;
+}
+nav .navLinks{
+    display: flex;
+    justify-content: space-between;
+    width: 831px;
+    position: absolute;
+    width: 831px;
+    height: 49px;
+    left: 450px;
+    top: 69px;
+}
+.navLinks a{
+    text-decoration: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    color: #01A453;
+}
+.contactnav{
+    position: absolute;
+    display: flex;
+    /* justify-content: center; */
+    width: 831px;
+    height: 20px;
+    left: 487px;
+    top: 22px;
+}
+.contactnav a{
+    text-decoration: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    color: #017D3F;
+}
+.contactnav i{
+    color: #017D3F;
+    margin: 0 2px 0 10px;
+}
+.hl{
+    position: absolute;
+    width: 831px;
+    height: 3px;
+    left: 450px;
+    top: 54px;
+}
+nav .navLinks p #active{
+    font-weight: 1000;
+    font-size: 15px;
+}
+
+/*css codes for mobile responsive navbar (give the .mobilenavbar element display: none; in media query (min-width: 1200px))*/
+
+.mobilenavbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background-color: #F0F0F0;
+    height: 60px;
+    top: 0px;
+}
+.mobilenavbar img{
+    position: absolute;
+    width: 82.29px;
+    height: 30px;
+    left: 22px;
+    top: 15px;
+}
+.mobilenavbar #hamburger{
+    position: absolute;
+    width: 34px;
+    height: 24px;
+    left: 90%;
+    top: 18px;
+    color: #017D3F;
+    font-size: 25px;
+}
+.mobilenavbar .dropdown-content{
+    display: none;
+    position: absolute;
+    top: 50px;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    background-color: #F0F0F0;
+}
+.mobilenavbar .open{
+    display: block;
+}
+.mobilenavbar .dropdown-content a{
+    text-decoration: none;
+    text-align: center;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 17px;
+    /* identical to box height */
+    color: #017D3F;
+}
+
+/*Individual Body Styling begins....*/
+.first {
+	padding: 10% 0 15% 5%;
+	background-image: url('../gallery-img/hero-image-bg.svg');
+	margin: 0 0 10% 0;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.first h1 {
+	font-weight: 800;
+	font-size: 250%; 
+	margin: 0 50% 2% 0;
+	color: white;
+}
+
+.first button {
+	width: 10%;
+	height: 3em;
+	background-color: var(--yellow);
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;
+	font-size: 80%;
+	font-weight: 600;
+}
+
+.first span {
+	padding: 0 3%;
+	color: white;
+}
+.first i {
+	font-size: 200%;
+	margin:0;
+	padding: 0 0.2em 0 0;
+	color: var(--green);
+}
+
+
+.grid {
+	padding: 0 5% 10% 5%;
+	display: grid;
+	grid-row: 1;
+	grid-template-columns: 65% 65%;
+	grid-gap: 5%;
+	grid-column-gap: 3%;
+}
+
+#img-4 {
+	margin: 0 0 0 -52%;
+	width: 103%;
+	height: 100%;
+}
+#img-5 {
+	grid-template-columns: 100%;
+	width: 156%;
+}
+@media (min-width: 1200px){
+	nav{
+		display: block;
+	}
+	.mobilenavbar{
+		display: none;
+	}
+}
+
+@media (max-width:800px) {
+	.first {
+		background-size: cover;
+		text-align: center;
+	}
+	.first h1 {
+		font-size: 160%;
+		margin: 0 25%;
+	}
+	.first button {
+		width: 30%;
+		margin-right:0;
+	}
+	.first span {
+		display: block;
+	}
+	.grid {
+		display: block;
+		padding: 0;
+	}
+	.grid img {
+		margin: 2.5% 0;
+		width: 100%;
+	}
+	#img-4 {
+		margin: 0;
+		width: 100%;
+	}
+	#img-5 {
+		width: 100%;
+	}
+}

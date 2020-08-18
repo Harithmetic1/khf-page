@@ -1,0 +1,259 @@
+/*Universal Styling.*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+:root {
+    --green: #1f8b55;
+    --yellow: #f4e858;
+}
+
+* {
+	font-size: 16px;
+	font-family: Montserrat;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+body {
+	margin: 0;
+}
+
+colored-dot { /*Found in the h1 of the first section.*/
+	color: var(--yellow);
+	font-size: 100%;
+}
+
+/*css codes for desktop navbar (give the nav element display: block; in media query (min-width: 1200px))*/
+
+nav{
+    display: flex;
+    background-color:  #F0F0F0;
+    height: 140px;
+    position: relative;
+    display: none;
+}
+nav img{
+    position: absolute;
+    width: 268px;
+    height: 100px;
+    left: 122px;
+    top: 20px;
+}
+nav .navLinks{
+    display: flex;
+    justify-content: space-between;
+    width: 831px;
+    position: absolute;
+    width: 831px;
+    height: 49px;
+    left: 450px;
+    top: 69px;
+}
+.navLinks a{
+    text-decoration: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    color: #01A453;
+}
+.contactnav{
+    position: absolute;
+    display: flex;
+    /* justify-content: center; */
+    width: 831px;
+    height: 20px;
+    left: 487px;
+    top: 22px;
+}
+.contactnav a{
+    text-decoration: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    color: #017D3F;
+}
+.contactnav i{
+    color: #017D3F;
+    margin: 0 2px 0 10px;
+}
+.hl{
+    position: absolute;
+    width: 831px;
+    height: 3px;
+    left: 450px;
+    top: 54px;
+}
+nav .navLinks p #active{
+    font-weight: 1000;
+    font-size: 15px;
+}
+
+/*css codes for mobile responsive navbar (give the .mobilenavbar element display: none; in media query (min-width: 1200px))*/
+
+.mobilenavbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background-color: #F0F0F0;
+    height: 60px;
+    top: 0px;
+}
+.mobilenavbar img{
+    position: absolute;
+    width: 82.29px;
+    height: 30px;
+    left: 22px;
+    top: 15px;
+}
+.mobilenavbar #hamburger{
+    position: absolute;
+    width: 34px;
+    height: 24px;
+    left: 90%;
+    top: 18px;
+    color: #017D3F;
+    font-size: 25px;
+}
+.mobilenavbar .dropdown-content{
+    display: none;
+    position: absolute;
+    top: 50px;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    background-color: #F0F0F0;
+}
+.mobilenavbar .open{
+    display: block;
+}
+.mobilenavbar .dropdown-content a{
+    text-decoration: none;
+    text-align: center;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 17px;
+    /* identical to box height */
+    color: #017D3F;
+}
+
+/*Individual Body Styling begins....*/
+
+.first img {
+	width: 100%;
+}
+
+
+.contact{
+	margin: 0;
+	padding: 0 5% 5%;
+	overflow: hidden;
+	text-align: center;
+}
+.contact h1 {
+	color: var(--green);
+	font-size: 180%;
+}
+.contact .flex {
+	display: flex;
+}
+
+.contact .flex div {
+	flex: 50%;
+}
+.contact .flex .left {
+	width:584px;
+	height: 584px;
+	background-image: url('../home-img/contact-img-left-bg.png');
+	background-size: 100%;
+}
+.contact .flex .left h1 {
+	margin: 40% 0 0 0;
+	font-size: 200%;
+	color: black;
+}
+.contact .flex .left a {
+	color: var(--green);
+	padding: 0 5%;
+}
+.contact .flex .right {
+	padding: 0 5% 5% 5%;
+	text-align: left;
+	background-color: #fafafa;
+}
+.contact .flex .right h1 {
+	font-size: 200%;
+	margin: 10% 0 0 0;
+	color: black;
+}
+.contact .flex .right h3 {
+	margin: 0 0 5% 0;
+}
+.contact .flex .right input {
+	border: none;
+	border-radius: 5px;
+	width: 100%;
+	height: 3em;
+	background-color: #f0f0f0;
+	padding: 0 0 0 2%;
+}
+.contact .flex .right input[name="message"] {
+	height: 10em;
+}
+.contact .flex .right button {
+	background-color: var(--green);
+	color: white;
+	width: 30%;
+	border-radius: 5px;
+	height: 3em;
+	cursor: pointer;	
+	font-size: 80%;
+	font-weight: 600;
+	margin: 0 0 0 35%;
+}
+
+@media (min-width: 1200px){
+	nav{
+		display: block;
+	}
+	.mobilenavbar{
+		display: none;
+	}
+}
+
+@media (max-width: 800px) {
+	.contact h1 {
+		font-size: 160%;
+	}
+	.contact {
+		padding: 0;
+	}
+	.contact .flex{
+		display: block;
+	}
+	.contact .flex .left {
+		display: none;
+	}
+	.contact .flex .right {
+		flex: none;
+		padding: 2% 5%;
+	}
+	.contact .flex .right button {
+		width: 40%;
+		margin-left: 30%;
+	}
+}

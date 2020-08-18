@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Donate | Kenneth's Hybrid Foundation</title>
+	<link rel="icon" type="image/png" href="home-img/favicon.png">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+	<link rel="stylesheet" type="text/css" href="css/donate.css">
+	<link rel="stylesheet" type="text/css" href="css/navbar-footer.css">
+	
+<body>
+	<!--html codes for desktop navbar-->
+
+<nav>
+	<img src="assets/images/KHFNavLogo.png" alt=""> 
+	<div class="contactnav">
+		<i class="fas fa-envelope-open-text"></i><span><a href="mailto: helpkennethhf@gmail.com">helpkennethhf@gmail.com</a></span>
+		<i class="fas fa-phone-alt"></i><span><a href="tel: +222-234-0413">+222-234-0413</a></span>
+	</div>
+	<div class="hl">
+		<svg width="831" height="3" viewBox="0 0 831 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<rect width="831" height="3" rx="1.5" fill="#F6ED7D" fill-opacity="0.4"/>
+			</svg>                
+	</div>
+	<div class="navLinks">
+	   <p><a href="home.html">Home</a></p>
+	   <p><a href="about.html" id="active">About</a></p>
+	   <p><a href="service.html">Services</a></p>
+	   <p><a href="gallery.html">Gallery</a></p>
+	   <p><a href="contact.html">Contact</a></p>
+	   <p><a href="donate.html">Donate</a></p>
+	</div>       
+</nav>
+
+
+<!--html codes for mobile responsive navbar -->
+<div class="mobilenavbar">
+	<img src="assets/images/KHFNavLogo.png" alt=""> 
+	<div id="hamburger" onclick="clickOn()">
+			<svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<rect width="34" height="6" rx="3" fill="#017D3F"/>
+				<rect y="9" width="34" height="6" rx="3" fill="#017D3F"/>
+				<rect y="18" width="34" height="6" rx="3" fill="#017D3F"/>
+				</svg>        
+	</div>            
+	<div class="dropdown-content">
+		<p><a href="home.html">Home</a></p>
+	   <p><a href="about.html" id="active">About</a></p>
+	   <p><a href="service.html">Services</a></p>
+	   <p><a href="gallery.html">Gallery</a></p>
+	   <p><a href="contact.html">Contact</a></p>
+	   <p><a href="donate.html">Donate</a></p>
+	</div>
+</div>
+
+
+	<section class="first">
+		<img src="home-img/donatepage-img-hero-image.svg">
+		<h1>Together, we can make the future of agriculture better.</h1>
+	</section>
+
+	<section class="form-area">
+		<h1>Choose an amount</h1>
+		<div class="amount-buttons">	
+			<button>1000</button>
+			<button>2000</button>
+			<button>3000</button>
+			<button>4000</button>
+		</div>
+		<h1>OR</h1>
+		<form>
+				<label for="amount">Amount *</label><br>
+			<input type="number" name="amount" id="amount" placeholder="Enter Amount" required>
+				<br><br>
+				<label for="name">Name *</label><br>
+			<input type="text" name="name" id="name" placeholder="Name on Card" required>
+				<br><br>
+				<label for="number">Number *</label><br>
+			<input type="number" name="number" id="number" placeholder="Card Number" required>
+				<br><br>
+
+			<div class="flex">
+				<div>
+						<label for="cvc">CVC *</label><br>
+					<input type="number" name="cvc" id="cvc" placeholder="CVC" maxlength="3" required>
+				</div>
+				<div>
+						<label for="date">Exp. Date *</label><br>
+					<input type="number" name="date" id="date" placeholder="MM/YY" required>
+				</div>
+				<div>
+						<label for="postal">Postal Code</label><br>
+					<input type="text" name="postal" id="postal" placeholder="Zip Code">
+				</div>
+			</div>
+			<button type="submit">Donate</button>
+		</form>
+	</section>
+
+	<footer>
+		<section class="flex">
+			<div class=" column column-one">
+			<img src="home-img/favicon.png" alt="Kenneth's Hybrid Foundation">
+			<h1>KENNETH'S</h1>
+			<h2>HYBRID</h2>
+			<h2>FOUNDATION</h2>
+			<p>Kenneth's Hybrid Foundation promises the best of agricultural produce and quality livestock</p>
+			<a href=""><i class="fab fa-instagram"></i></a>
+			<a href=""><i class="fab fa-twitter"></i></a>
+			<a href=""><i class="fab fa-linkedin-in"></i></a>
+
+			</div>
+			<div class="column column-two">
+				<h1>Company</h1>
+				<ul>
+					<li>&#62; About Us</li>
+					<li>&#62; Mission Statement</li>
+				</ul>
+			</div>	
+			<div class="column column-three">
+				<h1>Services</h1>
+				<ul>
+					<li>&#62; Crops and Fruits</li>
+					<li>&#62; Livestock</li>
+					<li>&#62; Poultry</li>
+				</ul>
+			</div>	
+			<div class="column column-four">
+				<h1>Contact</h1>
+				<ul>
+					<li>&#62; FAQ</li>
+					<li>&#62; Support</li>
+					<li>&#62; Privacy Policy</li>
+					<li>&#62; Terms and Conditions</li>
+				</ul>
+			</div>	
+		</section>
+	</footer>
+</body>
+<script src="script.js"></script>
+	<script src="https://kit.fontawesome.com/16160946ec.js" crossorigin="anonymous"></script>
+</html>
